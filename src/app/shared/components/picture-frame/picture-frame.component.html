@@ -1,0 +1,17 @@
+<div class="flex items-center justify-center rounded-full bg-white !w-[200px] !h-[200px]">
+  <!-- Image Profile -->
+  <ng-container *ngIf="imageSrc; else noImage">
+    <div class="flex rounded-full !w-[180px] !h-[180px]">
+      <img class="inline-block rounded-full w-full h-full"
+           [src]="imageSrc"
+           [alt]="'Foto de Perfil'">
+    </div>
+  </ng-container>
+
+  <!-- Image Default -->
+  <ng-template #noImage>
+    <div class="flex items-center justify-center rounded-full bg-[#E7EFF5] !w-[180px] !h-[180px]">
+      <img class="inline-block" src="../../../../assets/images/user.png" alt="Foto de Perfil">
+    </div>
+  </ng-template>
+</div>

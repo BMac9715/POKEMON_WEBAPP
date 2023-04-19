@@ -1,0 +1,52 @@
+<div class="max-w-[322px]">
+  <div class="flex flex-col">
+    <div class="w-full">
+      <h3 class="text-pokemon-blue text-2xl font-normal">Tu información</h3>
+      <p class="text-sm text-pokemon-gray font-normal">Completa la siguiente información para completar tu perfil</p>
+    </div>
+    <div class="w-full mt-8">
+      <form>
+        <div class="flex">
+          <mat-form-field appearance="outline" class="flex-auto">
+              <mat-label>Nombre</mat-label>
+              <input matInput type="text" [formControl]="fullnameInput">
+              <mat-error>*Campo requerido</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="flex">
+          <mat-form-field appearance="outline" class="flex-auto">
+              <mat-label>Pasatiempo Favorito</mat-label>
+              <input
+                  matInput
+                  type="text"
+                  [placeholder]="'This is a placeholder'">
+              <mat-error>*Campo requerido</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="flex">
+          <mat-form-field appearance="outline" class="flex-auto">
+              <mat-label>Cumpleaños</mat-label>
+              <input
+                  matInput
+                  type="text"
+                  [formControl]="birthdayInput">
+              <mat-error>*Campo requerido</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="flex">
+          <mat-form-field appearance="outline" class="flex-auto">
+              <mat-label>Documento</mat-label>
+              <input
+                  matInput
+                  type="text"
+                  [formControl]="cardInput">
+              <mat-error>*Campo requerido</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="flex">
+          <button mat-raised-button color="primary">Continuar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
